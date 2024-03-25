@@ -1,0 +1,54 @@
+.accomplishments {
+    padding: 7rem 0;
+    background-image: url(../../assets/images/accomplishments/accomplishments_main.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.accomplishments_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.accomplishments_heading {
+    color: #fff;
+    z-index: 11;
+    position: relative;
+}
+
+.accomplishments_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accomplishments_content span {
+    font-size: 4rem;
+    color: #fff;
+    z-index: 11;
+    margin-bottom: 1rem;
+}
+
+.accomplishments_content h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #a2dc4d;
+    z-index: 11;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accomplishments_content p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 11;
+    font-family: 'Poppins', sans-serif;
+}

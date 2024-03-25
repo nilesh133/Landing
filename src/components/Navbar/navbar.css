@@ -1,0 +1,118 @@
+.navbar_main {
+    background-color: #232525;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* overflow: hidden; */
+}
+
+.navbar_logo {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_links h3 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 0;
+}
+
+.navbar_links h3:hover {
+    color: #a2dc4d;
+}
+
+.navbar_links_menu {
+    position: relative;
+    height: 26px;
+    width: 32px;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.line1 {
+    position: absolute;
+    top: 0;
+    transform-origin: 0% 0%;
+}
+
+.line2 {
+    position: absolute;
+    top: 10px;
+}
+
+.line3 {
+    position: absolute;
+    top: 20px;
+    transform-origin: 0% 100%;
+}
+
+.menu_rotate_pos {
+    transform: rotate(40deg);
+}
+
+.menu_rotate_neg {
+    transform: rotate(-44deg);
+}
+
+.menu_hide {
+    display: none;
+}
+
+.navbar_vertical_menu {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    right: 0%;
+    background-color: #232525;
+    height: 100vh;
+    padding: 4rem 2rem;
+    right: -50%;
+    transition: all 0.5s;
+    z-index: 15;
+
+}
+
+.navbar_vertical_menu h3 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #808080;
+}
+
+@media screen and (max-width: 992px){
+    .navbar_links {
+        display: none;
+    }
+    .navbar_links_menu {
+        display: block;
+    }
+}
